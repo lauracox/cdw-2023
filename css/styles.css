@@ -451,7 +451,7 @@ footer .round-btn:hover {
 
 	.tooltiptext.long {
 		text-align: center;
-		right: 40px;
+		left: -260px;
 	  top: -40px;
 		padding: var(--sm-space) var(--sm-space) var(--xs-space) var(--sm-space);
 	}
@@ -550,7 +550,7 @@ footer .round-btn:hover {
 	}
 
 	#standout .bg {
-		margin: -20px -5% 0 -5%;
+		margin: -20px -5.5% 0 -5.5%;
 	}
 
 	footer {
