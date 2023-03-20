@@ -408,7 +408,10 @@ h1 {
 #register {
 	background: var(--color-black);
 	color: var(--color-white);
-	padding-bottom: var(--lg-space);
+}
+
+#sponsors {
+	margin-top: var(--lg-space);
 }
 
 #sponsors .logos img {
