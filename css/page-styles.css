@@ -96,7 +96,6 @@ h1 span {
 }
 
 .topic h3 {
-	font-size: 3rem;
 	line-height: 1.15em;
 	padding-bottom: 0;
 	padding-top: var(--lg-space);
@@ -222,8 +221,16 @@ h1 span {
 		letter-spacing: 1px;
 	}
 
+	.topic h3 {
+		font-size: 2.5rem;
+	}
+
 	.card h3 {
 		padding: 0;
+	}
+
+	.card h4 {
+		font-size: 2.25rem;
 	}
 
 	.card img {
@@ -278,6 +285,10 @@ h1 span {
 		font-size: 1.25rem;
 		font-variation-settings: "wght" 400, "wdth" 160, "ital" 0;
 		letter-spacing: 2px;
+	}
+
+	.topic h3 {
+		font-size: 3rem;
 	}
 
 	.card h3 {
