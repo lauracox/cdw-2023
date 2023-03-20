@@ -180,15 +180,6 @@ h1 span {
 	padding: 0 0 var(--md-space) 0;
 }
 
-@media screen and (max-width: 700px) {
-	h1 {
-		font-size: 3rem;
-	}
-
-	h1.shorter {
-		font-size: 2rem;
-	}
-}
 
 @media screen and (max-width: 1000px) {
 	body {font-size: 14px}
@@ -305,6 +296,16 @@ h1 span {
 		width: 40%;
 		height: auto;
 		padding: 0 var(--md-space) var(--md-space) 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	h1.shorter {
+		font-size: 2rem;
 	}
 }
 
