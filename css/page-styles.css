@@ -1,0 +1,307 @@
+h1 {
+	text-transform: uppercase;
+}
+
+h1 span {
+	font-variation-settings: "wght" 600, "wdth" 120, "ital" 10;
+	text-transform: capitalize;
+	vertical-align: top;
+}
+
+.subtitle {
+	display: inline-block;
+	padding: var(--md-space) var(--md-space) var(--sm-space) var(--md-space);
+	border-top: 2px solid var(--color-black);
+	border-bottom: 2px solid var(--color-black);
+}
+
+.subtitle h2 {
+	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
+}
+
+.subtitle p {
+	text-transform: unset !important;
+}
+
+.subtitle em {
+	font-variation-settings: "wght" 500, "wdth" 120, "ital" 0;
+}
+
+.subtitle .sc {
+	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
+}
+
+#about {
+	flex-flow: row wrap;
+}
+
+#about h2 {
+	font-size: 1.5em;
+	line-height: 1.25em;
+	font-variation-settings: "wght" 500, "wdth" 100, "ital" 0;
+	color: var(--brand-color3);
+}
+
+#about .columns {
+	width: 100%;
+	margin-top: var(--lg-space);
+}
+
+#about .columns ol {
+	display: flex;
+	max-width: unset;
+	margin: 0;
+	padding: 0;
+}
+
+#about .columns ol li {
+	font-size: .9rem;
+	min-width: 300px;
+	margin: 0 var(--md-space);
+}
+
+#schedule h2 {
+	font-variation-settings: "wght" 400, "wdth" 200, "ital" 0;
+	text-transform: uppercase;
+}
+
+.round-txt {
+	font-variation-settings: "wght" 550, "wdth" 100, "ital" 0;
+	text-transform: uppercase;
+	white-space: nowrap;
+	padding: var(--sm-space) var(--sm-space) var(--xs-space) var(--sm-space);
+	border: 3px solid var(--color-black);
+	border-radius: var(--lg-space);
+	color: var(--color-black);
+	position: relative;
+	top: 25%;
+}
+
+#schedule .round-txt {
+	background: var(--brand-color3);
+}
+
+.break {
+	padding: 0 var(--md-space);
+}
+
+.break h3, .break p {
+	display: inline-block;
+	padding: 0;
+}
+
+.break h3 {
+	padding-top: var(--xs-space);
+	text-transform: uppercase;
+}
+
+.topic h3 {
+	font-size: 3rem;
+	line-height: 1.15em;
+	padding-bottom: 0;
+	padding-top: var(--lg-space);
+}
+
+.topic p {
+	margin: 0;
+}
+
+.card h3 {
+	width: 20%;
+	font-variation-settings: "wght" 400, "wdth" 160, "ital" 0;
+}
+
+.panel h3 {
+	width: 40%;
+}
+
+.details span {
+	font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;
+}
+
+.details em {
+	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
+}
+
+#workshops .details em {
+	font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;
+}
+
+#workshops .sc {
+	font-variation-settings: "wght" 500, "wdth" 100, "ital" 0;
+}
+
+#standout {
+	padding: var(--lg-space) 0;
+	margin-bottom: -40px;
+}
+
+#standout.orange .bg {
+	background: var(--brand-color2);
+}
+
+#standout .bg::before {
+	content: '';
+	display: block;
+	height: 100px;
+	position: relative;
+	bottom: 100px;
+	background-image: url('../img/squiggle-border_orange.png');
+	background-size: 1000px;
+	background-repeat: repeat-x;
+}
+
+#standout .bg::after {
+	content: '';
+	display: block;
+	height: 100px;
+	position: relative;
+	top: calc(100% - 100px);
+	background-image: url('../img/squiggle-border_orange-rev.png');
+	background-size: 1000px;
+	background-repeat: repeat-x;
+}
+
+.conference, .reception {
+	padding: var(--md-space);
+}
+
+#standout img {
+	border: 2px solid var(--color-black);
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0 var(--md-space) var(--md-space) 0;
+}
+
+#standout h3 {
+	width: 100%;
+	font-variation-settings: "wght" 600, "wdth" 140, "ital" 0;
+	padding: 0 0 var(--md-space) 0;
+}
+
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 1000px) {
+	body {font-size: 14px}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	h1.shorter {
+		font-size: 3rem;
+	}
+
+	h1 span {
+		font-size: 1.5rem;
+	}
+
+	#about .text {width: 100%;}
+
+	#about .image img {
+		width: 100%;
+		margin-bottom: var(--md-space);
+	}
+
+	#about .columns ol {
+		flex-flow: column wrap;
+	}
+
+	#schedule h2 {
+		font-size: 2rem;
+	}
+
+	.break {
+		margin-bottom: var(--md-space);
+	}
+
+	.break h3 {
+		width: 25%;
+		font-size: .8rem;
+		font-variation-settings: "wght" 450, "wdth" 120, "ital" 0;
+		letter-spacing: 1px;
+	}
+
+	.card h3 {
+		padding: 0;
+	}
+
+	.card img {
+		width: 50%;
+		height: auto;
+		padding: var(--sm-space) 0;
+	}
+
+	.card ul {
+		padding: var(--sm-space) 0 0 0;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	h1 {
+		font-size: 10rem;
+	}
+
+	h1.shorter {
+		font-size: 5rem;
+	}
+
+	h1 span {
+		font-size: 3rem;
+	}
+
+	#about .text {width: 50%;}
+
+	#about .image img {
+		width: 100%;
+		padding: 0 var(--lg-space) var(--md-space) 0;
+	}
+
+	#about .columns ol {
+		flex-flow: row wrap;
+	}
+
+	#about .columns ol li {
+		max-width: 20%;
+	}
+
+	#schedule h2 {
+		font-size: 3rem;
+	}
+
+	.break {
+		margin-bottom: var(--lg-space);
+	}
+
+	.break h3 {
+		width: 40%;
+		font-size: 1.25rem;
+		font-variation-settings: "wght" 400, "wdth" 160, "ital" 0;
+		letter-spacing: 2px;
+	}
+
+	.card h3 {
+		padding-left: var(--md-space);
+	}
+
+	.card img {
+		object-fit: contain;
+		object-position: top center;
+		width: 20%;
+		height: auto;
+		padding: 0 var(--md-space) var(--md-space) 0;
+	}
+
+	#workshops .card img {
+		width: 40%;
+		height: auto;
+		padding: 0 var(--md-space) var(--md-space) 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#about .columns ol {
+		justify-content: space-between;
+	}
+}
