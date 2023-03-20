@@ -338,7 +338,7 @@ h1 {
   cursor: pointer;
 }
 
-.tooltip .tooltiptext {
+.tooltiptext {
 	font-size: 1rem;
 	line-height: 1.25em;
 	font-variation-settings: "wght" 600, "wdth" 120, "ital" 0;
@@ -448,6 +448,13 @@ footer .round-btn:hover {
 		font-size: 1.5rem;
 		padding-bottom: .25em;
 	}
+
+	.tooltiptext.long {
+		text-align: center;
+		right: 40px;
+	  top: -40px;
+		padding: var(--sm-space) var(--sm-space) var(--xs-space) var(--sm-space);
+	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -543,7 +550,7 @@ footer .round-btn:hover {
 	}
 
 	#standout .bg {
-		margin: -20px -6% 0 -6%;
+		margin: -20px -5% 0 -5%;
 	}
 
 	footer {
