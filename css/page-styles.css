@@ -322,7 +322,7 @@ h1 span {
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
 	#about .columns ol {
 		justify-content: space-between;
 	}
