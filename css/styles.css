@@ -90,6 +90,7 @@ html {
 	height: 100%;
 	scroll-behavior: smooth;
 	background: var(--brand-color4);
+	overflow-x: hidden;
 }
 
 /* For Chrome & Safari */
@@ -453,7 +454,7 @@ footer .round-btn:hover {
 
 @media screen and (max-width: 700px) {
 	h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		padding-bottom: .25em;
 	}
 }
@@ -589,6 +590,7 @@ footer .round-btn:hover {
 
 	#about .image {
 		width: 50%;
+		margin-left: var(--sm-space);
 	}
 
 	.card {
