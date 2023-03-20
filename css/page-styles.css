@@ -259,6 +259,8 @@ h1 span {
 
 	#about .text {width: 50%;}
 
+	#about .image {width: 45%;}
+
 	#about .image img {
 		width: 100%;
 		padding: 0 var(--lg-space) var(--md-space) 0;
