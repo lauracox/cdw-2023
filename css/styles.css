@@ -469,7 +469,7 @@ footer .round-btn:hover {
 	}
 
 	header .menu li {
-		padding: var(--md-space);
+		padding: var(--sm-space);
 	}
 
 	#mobile-menu-btn {
@@ -515,7 +515,8 @@ footer .round-btn:hover {
 		width: 100%;
 		margin-top: var(--md-space);
 	}
-	#schedule, #register h2 {
+
+	#schedule h2, #register h2 {
 		font-size: 2.5rem;
 	}
 
@@ -587,7 +588,7 @@ footer .round-btn:hover {
 		margin-left: var(--sm-space);
 	}
 
-	#schedule, #register h2 {
+	#schedule h2, #register h2 {
 		font-size: 3rem;
 	}
 
