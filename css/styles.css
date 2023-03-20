@@ -90,7 +90,6 @@ html {
 	height: 100%;
 	scroll-behavior: smooth;
 	background: var(--brand-color4);
-	overflow-x: hidden;
 }
 
 /* For Chrome & Safari */
@@ -115,6 +114,7 @@ body {
   text-rendering: optimizeSpeed;
   font-size: 18px;
   line-height: 1.25;
+  overflow-x: hidden;
 }
 
 header {
@@ -265,11 +265,6 @@ h1 {
 
 /* Schedule */
 
-
-#schedule h2 {
-	font-size: 3rem;
-}
-
 .card {
 	display: flex;
 	position: relative;
@@ -415,10 +410,6 @@ h1 {
 	color: var(--color-white);
 }
 
-#register h2 {
-	font-size: 3rem;
-}
-
 #sponsors .logos img {
 	max-width: 200px;
 }
@@ -495,7 +486,7 @@ footer .round-btn:hover {
 	}
 
 	#mobile-menu-toggle:checked ~ #mobile-menu-btn::after {
-		content: '\01F5D9';
+		content: '\2716';
 		color: var(--color-black);
 		font-size: 20px;
 		position: relative;
@@ -523,6 +514,9 @@ footer .round-btn:hover {
 	#about .image img {
 		width: 100%;
 		margin-top: var(--md-space);
+	}
+	#schedule, #register h2 {
+		font-size: 2.5rem;
 	}
 
 	.card {
@@ -591,6 +585,10 @@ footer .round-btn:hover {
 	#about .image {
 		width: 50%;
 		margin-left: var(--sm-space);
+	}
+
+	#schedule, #register h2 {
+		font-size: 3rem;
 	}
 
 	.card {
