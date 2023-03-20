@@ -176,7 +176,8 @@ footer {
 
 .sc {
 	font-variant: small-caps;
-	font-variation-settings: "wght" 500, "wdth" 100, "ital" 0;
+	letter-spacing: .05em;
+	font-variation-settings: unset;
 }
 
 .ext-link {
@@ -296,11 +297,11 @@ h1 {
 	padding: var(--sm-space) 0 var(--lg-space) 0;
 }
 
-.card li:not(:first-of-type){
+.card li:not(:first-of-type) {
 	padding: var(--lg-space) 0;
 }
 
-.card li:not(:last-of-type){
+.card li:not(:last-of-type) {
 	border-bottom: 1px solid var(--color-black);
 }
 
@@ -535,8 +536,8 @@ footer .round-btn:hover {
 		margin: -10px;
 	}
 
-	.card:last-of-type > p {
-		margin: 40px;
+	.card:last-of-type .date {
+		margin-top: 40px;
 	}
 
 	#standout .bg {
