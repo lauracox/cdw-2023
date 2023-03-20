@@ -184,9 +184,7 @@
         
     <section id="register">
       <h2>Register</h2>
-      <div id="eventbrite">
-        
-      </div>
+      <div id="eventbrite-widget-container-516350386907"></div>
 
       <div id="sponsors" class="center-text">
         <p>Proudly sponsored by:</p>
@@ -211,6 +209,27 @@
         <p>&copy; Copyright <script>document.write(new card().getFullYear());</script>. TDS is a 501(c)3 non-profit organization.</p>
       </div>
   </footer>
+
+  
+  <!-- SCRIPTS -->
+  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+  <script type="text/javascript">
+      var exampleCallback = function() {
+          console.log('Order complete!');
+      };
+
+      window.EBWidgets.createWidget({
+          // Required
+          widgetType: 'checkout',
+          eventId: '516350386907',
+          iframeContainerId: 'eventbrite-widget-container-516350386907',
+
+          // Optional
+          iframeContainerHeight: 800,  // Widget height in pixels. Defaults to a minimum of 625px if not provided
+          onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+      });
+  </script>
 
 </body>
 </html>
