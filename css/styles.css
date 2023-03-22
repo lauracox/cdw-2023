@@ -417,6 +417,10 @@ h1 {
 	color: var(--color-white);
 }
 
+iframe {
+	border-radius: var(--md-space);
+}
+
 #sponsors {
 	margin-top: var(--lg-space);
 }
