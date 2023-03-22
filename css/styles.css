@@ -137,7 +137,7 @@ header svg {
 main {
 	background-image: 
 		linear-gradient(90deg, rgba(244,238,212,0) 0%, rgba(244,238,212,0.5) 5%, rgba(244,238,212,1) 12%),
-		linear-gradient(180deg, rgba(147,144,255,1) 30%, rgba(255,133,82,1) 65%, rgba(219,255,69,1) 100%);
+		linear-gradient(180deg, rgba(147,144,255,1) 10%, rgba(255,133,82,1) 50%, rgba(219,255,69,1) 90%);
 }
 
 section {
@@ -382,13 +382,20 @@ h1 {
 	background: var(--brand-color3);
 }
 
+#standout.green .bg::before {
+	background-image: url('../img/squiggle-border_green.png');
+}
+
+#standout.green .bg::after {
+	background-image: url('../img/squiggle-border_green-rev.png');
+}
+
 #standout .bg::before {
 	content: '';
 	display: block;
 	height: 100px;
 	position: relative;
 	bottom: 80px;
-	background-image: url('../img/squiggle-border_green.png');
 	background-size: 1000px;
 	background-repeat: repeat-x;
 }
@@ -399,7 +406,6 @@ h1 {
 	height: 100px;
 	position: relative;
 	top: calc(100% - 120px);
-	background-image: url('../img/squiggle-border_green-rev.png');
 	background-size: 1000px;
 	background-repeat: repeat-x;
 }
@@ -427,6 +433,7 @@ footer {
 }
 
 #insta {
+	display: inline-block;
 	margin: var(--md-space);
 }
 

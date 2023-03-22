@@ -8,6 +8,10 @@ h1 span {
 	vertical-align: top;
 }
 
+#firm-crawl h1 span {
+	display: block;
+}
+
 .subtitle {
 	display: inline-block;
 	padding: var(--md-space) var(--md-space) var(--sm-space) var(--md-space);
@@ -63,6 +67,7 @@ h1 span {
 #schedule h2 {
 	font-variation-settings: "wght" 400, "wdth" 200, "ital" 0;
 	text-transform: uppercase;
+	position: relative;
 }
 
 .round-txt {
@@ -122,47 +127,136 @@ h1 span {
 	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
 }
 
+.conference, .reception {
+	padding: var(--md-space);
+}
+
 #workshops .details em {
 	font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;
 }
 
 #workshops .sc {
-	font-variation-settings: "wght" 500, "wdth" 100, "ital" 0;
+	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
+}
+
+#workshops .card ul {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#workshops .card ul li {
+	width: 75%;
+	padding-right: var(--md-space);
+}
+
+#workshops .card ul img {
+	object-fit: contain;
+	object-position: top center;
+	width: 25%;
+	height: auto;
+}
+
+#firm-crawl #schedule h2 {
+	padding-bottom: var(--sm-space);
+}
+
+#firm-crawl .card {
+	padding-top: var(--xl-space);
+}
+
+#workshops .card:last-of-type {
+	padding-top: 0;
+}
+
+#workshops .card:last-of-type li:last-of-type {
+	border-bottom: none;
+}
+
+#firm-crawl .card ul {
+	width: 100%;
+	max-width: unset;
+}
+
+#firm-crawl .card ul li {
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 0 0 var(--xl-space) 0;
+}
+
+#firm-crawl .card li:not(:last-of-type) {
+	border-bottom: none;
+}
+
+#firm-crawl .card ul li div {
+	width: 75%;
+	padding: 0 var(--md-space) var(--lg-space) 0;
+	margin-left: var(--md-space);
+	border-bottom: 1px solid var(--color-black);
+}
+
+#firm-crawl .card ul li div p {
+	padding-bottom: var(--md-space);
+}
+
+#firm-crawl .card ul li img {
+	object-fit: contain;
+	object-position: top center;
+	width: 25%;
+	height: auto;
+}
+
+#firm-crawl .card ul li img.center {
+	object-position: 50% 40%;
+}
+
+#firm-crawl .round-btn {
+	top: 0;
+}
+
+#workshops .card:last-of-type {
+	padding-top: var(--md-space);
+}
+
+#workshops .card:last-of-type li:last-of-type {
+	border-bottom: none;
 }
 
 #standout {
 	padding: var(--lg-space) 0;
 	margin-bottom: -40px;
+	position: relative;
 }
 
 #standout.orange .bg {
 	background: var(--brand-color2);
 }
 
-#standout .bg::before {
-	content: '';
-	display: block;
-	height: 100px;
-	position: relative;
-	bottom: 100px;
+#standout.orange .bg::before {
 	background-image: url('../img/squiggle-border_orange.png');
-	background-size: 1000px;
-	background-repeat: repeat-x;
+}
+
+#standout.orange .bg::after {
+	background-image: url('../img/squiggle-border_orange-rev.png');
+}
+
+#standout.purple .bg {
+	background: var(--brand-color1);
+}
+
+#standout.purple .bg::before {
+	background-image: url('../img/squiggle-border_purple.png');
+}
+
+#standout.purple .bg::after {
+	background-image: url('../img/squiggle-border_purple-rev.png');
+}
+
+#standout .bg::before {
+	bottom: 100px;
 }
 
 #standout .bg::after {
-	content: '';
-	display: block;
-	height: 100px;
-	position: relative;
 	top: calc(100% - 100px);
-	background-image: url('../img/squiggle-border_orange-rev.png');
-	background-size: 1000px;
-	background-repeat: repeat-x;
-}
-
-.conference, .reception {
-	padding: var(--md-space);
 }
 
 #standout img {
@@ -171,6 +265,15 @@ h1 span {
 	height: auto;
 	padding: 0;
 	margin: 0 var(--md-space) var(--md-space) 0;
+}
+
+#firm-crawl #standout img {
+	margin: 0;
+}
+
+#standout.full img {
+	width: 25%;
+	border: unset;
 }
 
 #standout h3 {
@@ -233,14 +336,23 @@ h1 span {
 		font-size: 2.25rem;
 	}
 
-	.card img {
+	.card > img {
 		width: 50%;
 		height: auto;
 		padding: var(--sm-space) 0;
 	}
 
+	#workshops .card > img {
+		width: 100%;
+	}
+
 	.card ul {
 		padding: var(--sm-space) 0 0 0;
+	}
+
+	#standout.full .bg {
+		margin: -100px -5.5% 0 -5.5%;
+		height: 120%;
 	}
 }
 
@@ -297,7 +409,7 @@ h1 span {
 		padding-left: var(--md-space);
 	}
 
-	.card img {
+	.card > img {
 		object-fit: contain;
 		object-position: top center;
 		width: 20%;
@@ -305,10 +417,14 @@ h1 span {
 		padding: 0 var(--md-space) var(--md-space) 0;
 	}
 
-	#workshops .card img {
-		width: 40%;
+	#workshops .card > img {
+		width: 30%;
 		height: auto;
-		padding: 0 var(--md-space) var(--md-space) 0;
+		padding: 0;
+	}
+
+	#standout.full .bg {
+		margin: -120px -15% 0 -15%;
 	}
 }
 
