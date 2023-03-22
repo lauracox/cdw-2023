@@ -1,3 +1,5 @@
+/* Event Page Styles */
+
 h1 {
 	text-transform: uppercase;
 }
@@ -6,10 +8,6 @@ h1 span {
 	font-variation-settings: "wght" 600, "wdth" 120, "ital" 10;
 	text-transform: capitalize;
 	vertical-align: top;
-}
-
-#firm-crawl h1 span {
-	display: block;
 }
 
 .subtitle {
@@ -127,99 +125,8 @@ h1 span {
 	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
 }
 
-.conference, .reception {
-	padding: var(--md-space);
-}
 
-#workshops .details em {
-	font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;
-}
-
-#workshops .sc {
-	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
-}
-
-#workshops .card ul {
-	display: flex;
-	flex-flow: row nowrap;
-}
-
-#workshops .card ul li {
-	width: 75%;
-	padding-right: var(--md-space);
-}
-
-#workshops .card ul img {
-	object-fit: contain;
-	object-position: top center;
-	width: 25%;
-	height: auto;
-}
-
-#firm-crawl #schedule h2 {
-	padding-bottom: var(--sm-space);
-}
-
-#firm-crawl .card {
-	padding-top: var(--xl-space);
-}
-
-#workshops .card:last-of-type {
-	padding-top: 0;
-}
-
-#workshops .card:last-of-type li:last-of-type {
-	border-bottom: none;
-}
-
-#firm-crawl .card ul {
-	width: 100%;
-	max-width: unset;
-}
-
-#firm-crawl .card ul li {
-	display: flex;
-	flex-flow: row nowrap;
-	padding: 0 0 var(--xl-space) 0;
-}
-
-#firm-crawl .card li:not(:last-of-type) {
-	border-bottom: none;
-}
-
-#firm-crawl .card ul li div {
-	width: 75%;
-	padding: 0 var(--md-space) var(--lg-space) 0;
-	margin-left: var(--md-space);
-	border-bottom: 1px solid var(--color-black);
-}
-
-#firm-crawl .card ul li div p {
-	padding-bottom: var(--md-space);
-}
-
-#firm-crawl .card ul li img {
-	object-fit: contain;
-	object-position: top center;
-	width: 25%;
-	height: auto;
-}
-
-#firm-crawl .card ul li img.center {
-	object-position: 50% 40%;
-}
-
-#firm-crawl .round-btn {
-	top: 0;
-}
-
-#workshops .card:last-of-type {
-	padding-top: var(--md-space);
-}
-
-#workshops .card:last-of-type li:last-of-type {
-	border-bottom: none;
-}
+/* Standout Overrides */
 
 #standout {
 	padding: var(--lg-space) 0;
@@ -267,10 +174,6 @@ h1 span {
 	margin: 0 var(--md-space) var(--md-space) 0;
 }
 
-#firm-crawl #standout img {
-	margin: 0;
-}
-
 #standout.full img {
 	width: 25%;
 	border: unset;
@@ -281,6 +184,118 @@ h1 span {
 	font-variation-settings: "wght" 600, "wdth" 140, "ital" 0;
 	padding: 0 0 var(--md-space) 0;
 }
+
+
+/* Event Specific Styles */
+
+/* Forum Page */
+
+.conference, .reception {
+	padding: var(--md-space);
+}
+
+/* Workshop Page */
+
+#workshops .details em {
+	font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;
+}
+
+#workshops .sc {
+	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
+}
+
+#workshops .card ul {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#workshops .card ul li {
+	width: 75%;
+	padding-right: var(--md-space);
+}
+
+#workshops .card ul img {
+	object-fit: contain;
+	object-position: top center;
+	width: 25%;
+	height: auto;
+}
+
+#workshops .card:last-of-type {
+	padding-top: 0;
+}
+
+#workshops .card:last-of-type li:last-of-type {
+	border-bottom: none;
+}
+
+#workshops .card:last-of-type {
+	padding-top: var(--md-space);
+}
+
+#workshops .card:last-of-type li:last-of-type {
+	border-bottom: none;
+}
+
+/* Firm Crawl Page */
+
+#firm-crawl h1 span {
+	display: block;
+}
+
+#firm-crawl #schedule h2 {
+	padding-bottom: var(--sm-space);
+}
+
+/* card overrides are due to .standout on parent, easier to do it this way */
+
+#firm-crawl .card {
+	padding-top: var(--xl-space);
+}
+
+#firm-crawl .card ul {
+	width: 100%;
+	max-width: unset;
+}
+
+#firm-crawl .card ul li {
+	display: flex;
+	padding: 0 0 var(--xl-space) 0;
+}
+
+#firm-crawl .card li:not(:last-of-type) {
+	border-bottom: none;
+}
+
+#firm-crawl .card ul li div {
+	width: 75%;
+	padding: 0 var(--md-space) var(--lg-space) 0;
+	margin-left: var(--lg-space);
+	border-bottom: 1px solid var(--color-black);
+}
+
+#firm-crawl .card ul li div p {
+	padding-bottom: var(--md-space);
+	margin: 0;
+}
+
+#firm-crawl .card ul li img {
+	object-fit: contain;
+}
+
+#firm-crawl .card ul li img.center {
+	object-position: 50% 40%;
+}
+
+#firm-crawl .card:last-of-type li:last-of-type{
+	border-bottom: none;
+}
+
+#firm-crawl .round-btn {
+	top: 0;
+}
+
+
 
 
 @media screen and (max-width: 1000px) {
@@ -352,7 +367,20 @@ h1 span {
 
 	#standout.full .bg {
 		margin: -100px -5.5% 0 -5.5%;
-		height: 120%;
+		height: 102%;
+	}
+
+	#standout.full img {
+		margin: 0 0 var(--lg-space) var(--lg-space);
+	}
+
+	#firm-crawl .card ul li {
+		flex-flow: column;
+	}
+
+	#firm-crawl .card ul li img {
+		max-height: 100px;
+		object-position: top left;
 	}
 }
 
@@ -424,7 +452,18 @@ h1 span {
 	}
 
 	#standout.full .bg {
-		margin: -120px -15% 0 -15%;
+		margin: -120px -22% 0 -22%;
+		height: 106%;
+	}
+
+	#firm-crawl .card ul li {
+		flex-flow: row nowrap;
+	}
+
+	#firm-crawl .card ul li img {
+		max-width: 200px;
+		max-height: 100px;
+		object-position: top center;
 	}
 }
 
@@ -441,5 +480,11 @@ h1 span {
 @media screen and (min-width: 1500px) {
 	#about .columns ol {
 		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	#standout .bg {
+		margin: -120px -34% 0 -34% !important;
 	}
 }
