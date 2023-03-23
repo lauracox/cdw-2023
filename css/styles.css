@@ -164,7 +164,7 @@ footer {
 
 .round-btn:hover {
 	background: var(--color-black);
-	color: var(--brand-color4);
+	color: var(--color-white);
 }
 
 .menu {
