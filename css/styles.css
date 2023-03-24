@@ -345,7 +345,7 @@ h1 {
 	font-variation-settings: "wght" 600, "wdth" 120, "ital" 0;
 	text-align: right;
   visibility: hidden;
-  width: auto;
+  width: max-content;
   border-radius: var(--md-space);
   border: 3px solid var(--brand-color1);
   color: var(--brand-color1);
