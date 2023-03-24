@@ -98,6 +98,10 @@ h1 span {
 	text-transform: uppercase;
 }
 
+.break + .card {
+	border-top: 0px;
+}
+
 .topic h3 {
 	line-height: 1.15em;
 	padding-bottom: 0;
@@ -237,9 +241,7 @@ h1 span {
 	border-bottom: none;
 }
 
-#workshops .break + .card {
-	border-top: 0px;
-}
+
 
 /* Firm Crawl Page */
 
