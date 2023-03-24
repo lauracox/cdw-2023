@@ -241,6 +241,10 @@ h1 span {
 	border-bottom: none;
 }
 
+.tooltiptext {
+	visibility: visible;
+  }
+
 
 
 /* Firm Crawl Page */

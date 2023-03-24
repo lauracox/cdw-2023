@@ -412,6 +412,11 @@ h1 {
 
 /* Register */
 
+#eventbrite-widget-container-516350386907 {
+	border-radius: 15vw;
+	overflow:hidden;
+}
+
 #register {
 	background: var(--color-black);
 	color: var(--color-white);
