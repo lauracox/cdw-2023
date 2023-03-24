@@ -421,8 +421,28 @@ h1 {
 	margin-top: var(--lg-space);
 }
 
+
+#sponsors .logos {
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	justify-content: space-around;
+	justify-items: center;
+	margin-bottom: 5vw;
+}
+
+#sponsors .large>* {
+	max-width: 16vw;
+}
+#sponsors .medium>* {
+	max-width: 11vw;
+}
+#sponsors .small>* {
+	max-width: 7.5vw;
+}
+
 #sponsors .logos img {
-	max-width: 200px;
+	width:100%;
 }
 
 /* Footer */
