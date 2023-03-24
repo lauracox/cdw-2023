@@ -135,7 +135,7 @@ h1 span {
 }
 
 #standout.orange .bg {
-	background: var(--brand-color2);
+	background: linear-gradient(0deg, var(--brand-color2) 0%, var(--brand-color4) 25%, var(--brand-color4) 75%, var(--brand-color2) 100%);
 }
 
 #standout.orange .bg::before {
@@ -147,7 +147,7 @@ h1 span {
 }
 
 #standout.purple .bg {
-	background: var(--brand-color1);
+	background: linear-gradient(0deg, var(--brand-color1) 0%, var(--brand-color4) 25%, var(--brand-color4) 75%, var(--brand-color1) 100%);
 }
 
 #standout.purple .bg::before {
