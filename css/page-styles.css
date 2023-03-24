@@ -237,7 +237,7 @@ h1 span {
 	border-bottom: none;
 }
 
-#workshops .card:first-of-type {
+#workshops .break + .card {
 	border-top: 0px;
 }
 
