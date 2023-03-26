@@ -437,10 +437,10 @@ h1 {
 }
 
 #sponsors .large>* {
-	max-width: 16vw;
+	max-width: 12vw;
 }
 #sponsors .medium>* {
-	max-width: 11vw;
+	max-width: 9vw;
 }
 #sponsors .small>* {
 	max-width: 7.5vw;
