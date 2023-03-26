@@ -204,6 +204,10 @@ h1 span {
 
 /* Workshop Page */
 
+#workshops .details {
+	margin: unset;
+}
+
 #workshops .details em {
 	font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;
 }
@@ -212,7 +216,43 @@ h1 span {
 	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
 }
 
-#workshops .card ul {
+#workshops .card {
+	max-width: unset;
+	display: block;
+}
+
+#workshops .card li {
+	display: grid;
+	grid-gap: var(--md-space);
+}
+
+#workshops img {
+	object-fit: cover;
+  	width: 100%;
+  	max-height: 100%;
+}
+
+#workshops img.feature {
+	grid-area: feature;
+}
+
+#workshops img.headshot {
+	grid-area: headshot;
+}
+
+#workshops .info {
+	grid-area: info;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: var(--sm-space);
+}
+
+#workshops .description {
+	grid-area: description;
+	margin: unset;
+}
+
+/* #workshops .card ul {
 	display: flex;
 	flex-flow: row nowrap;
 }
@@ -228,6 +268,8 @@ h1 span {
 	width: 25%;
 	height: auto;
 }
+
+*/
 
 #workshops .card h4 {
 	padding-bottom: 0;
@@ -261,6 +303,10 @@ h1 span {
 
 .tooltiptext {
 	visibility: visible;
+	position: relative;
+	left: 0;
+  	top: 0;
+  	padding: var(--sm-space) var(--sm-space) var(--xs-space) var(--sm-space);
 }
 
 
@@ -385,12 +431,17 @@ h1 span {
 		padding: var(--sm-space) 0;
 	}
 
-	#workshops .card > img {
-		width: 100%;
-	}
-
 	.card ul {
 		padding: var(--sm-space) 0 0 0;
+	}
+
+	#workshops ul.card li {
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"feature feature"
+			"info headshot"
+			"description description";
 	}
 
 	#standout.full .bg {
@@ -471,6 +522,14 @@ h1 span {
 		width: 20%;
 		height: auto;
 		padding: 0 var(--md-space) var(--md-space) 0;
+	}
+
+	#workshops ul.card li {
+		grid-template-columns: 3fr 3fr minmax(100px, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: 
+			"feature info headshot"
+			"feature description description";
 	}
 
 	#workshops .card > img {
