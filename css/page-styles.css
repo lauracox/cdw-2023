@@ -229,6 +229,14 @@ h1 span {
 	height: auto;
 }
 
+#workshops .card h4 {
+	padding-bottom: 0;
+}
+
+#workshops .card p:not(.details) {
+	margin-top: var(--sm-space);
+}
+
 #workshops .card:last-of-type {
 	padding-top: 0;
 }
@@ -245,9 +253,15 @@ h1 span {
 	border-bottom: none;
 }
 
+.tooltip {
+	top: var(--sm-space);
+	right: 0;
+  	left: var(--sm-space);
+}
+
 .tooltiptext {
 	visibility: visible;
-  }
+}
 
 
 
