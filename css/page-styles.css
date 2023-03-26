@@ -142,6 +142,10 @@ h1 span {
 	background: linear-gradient(0deg, var(--brand-color2) 0%, var(--brand-color4) 25%, var(--brand-color4) 75%, var(--brand-color2) 100%);
 }
 
+#forum #standout.orange .bg {
+	background: var(--brand-color2);
+}
+
 #standout.orange .bg::before {
 	background-image: url('../img/squiggle-border_orange.png');
 }

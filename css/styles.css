@@ -413,8 +413,8 @@ h1 {
 /* Register */
 
 #eventbrite-widget-container-516350386907 {
-	border-radius: 3vw;
-	overflow:hidden;
+	border-radius: var(--lg-space);
+	overflow: hidden;
 }
 
 #register {
@@ -436,18 +436,18 @@ h1 {
 	margin-bottom: 5vw;
 }
 
-#sponsors .large>* {
-	max-width: 12vw;
+#sponsors .logos.large * {
+	width: 12vw;
 }
-#sponsors .medium>* {
-	max-width: 9vw;
+#sponsors .logos.medium * {
+	width: 9vw;
 }
-#sponsors .small>* {
-	max-width: 7.5vw;
+#sponsors .logos.small * {
+	width: 7.5vw;
 }
 
 #sponsors .logos img {
-	width:100%;
+	height: 100%;
 }
 
 /* Footer */
