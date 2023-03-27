@@ -146,6 +146,10 @@ h1 span {
 	background: var(--brand-color2);
 }
 
+#marathon #standout.purple .bg {
+	background: var(--brand-color1);
+}
+
 #standout.orange .bg::before {
 	background-image: url('../img/squiggle-border_orange.png');
 }
