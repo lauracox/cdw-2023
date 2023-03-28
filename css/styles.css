@@ -412,7 +412,7 @@ h1 {
 
 /* Register */
 
-#eventbrite-widget-container-516350386907 {
+.checkout-embed {
 	border-radius: var(--md-space);
 	overflow: hidden;
 }
