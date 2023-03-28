@@ -237,6 +237,7 @@ svg path {
 h1 {
 	font-size: 3.5rem;
 	padding-bottom: .25em;
+/*animation: title 10s ease-in-out infinite alternate;*/
 }
 
 #hero p {
@@ -691,4 +692,11 @@ footer .round-btn:hover {
 		padding: var(--lg-space) var(--lg-margin);
 	}
 
+}
+
+@keyframes title {
+	0% {font-variation-settings: "wght" 650, "wdth" 175, "ital" 0;}
+	5% {font-variation-settings: "wght" 650, "wdth" 175, "ital" 0;}
+	95% {font-variation-settings: "wght" 650, "wdth" 100, "ital" 0;}
+	100% {font-variation-settings: "wght" 650, "wdth" 100, "ital" 0;}
 }
