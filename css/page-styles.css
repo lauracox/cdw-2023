@@ -33,6 +33,21 @@ h1 span {
 	font-variation-settings: "wght" 600, "wdth" 100, "ital" 0;
 }
 
+body.green #about h2,
+body.green #about li::marker {
+	color: var(--brand-color3);
+}
+
+body.orange #about h2,
+body.orange #about li::marker {
+	color: var(--brand-color2);
+}
+
+body.purple #about h2,
+body.purple #about li::marker {
+	color: var(--brand-color1);
+}
+
 #about {
 	flex-flow: row wrap;
 }
@@ -240,11 +255,11 @@ h1 span {
   	max-height: 100%;
 }
 
-#workshops img.feature {
+#workshops .feature {
 	grid-area: feature;
 }
 
-#workshops img.headshot {
+#workshops .headshot {
 	grid-area: headshot;
 }
 
@@ -260,24 +275,20 @@ h1 span {
 	margin: unset;
 }
 
-/* #workshops .card ul {
-	display: flex;
-	flex-flow: row nowrap;
+#workshops div.feature {
+	height: 50%;
+	display: grid;
+	place-items: center;
+	background: var(--brand-color1);
+	border: 4px solid var(--color-black);
 }
 
-#workshops .card ul li {
-	width: 75%;
-	padding-right: var(--md-space);
+#workshops div.feature span {
+	color: var(--color-black);
+	font-size: 8rem;
+	font-variation-settings: "wght" 200, "wdth" 100, "ital" 0;
+	animation: weight 5s linear infinite alternate;
 }
-
-#workshops .card ul img {
-	object-fit: contain;
-	object-position: top center;
-	width: 25%;
-	height: auto;
-}
-
-*/
 
 #workshops .card h4 {
 	padding-bottom: 0;
@@ -484,9 +495,9 @@ h1 span {
 		font-size: 3rem;
 	}
 
-	#about .text {width: 50%;}
+	#about .text {width: 39%;}
 
-	#about .image {width: 45%;}
+	#about .image {width: 59%;}
 
 	#about .image img {
 		width: 100%;
@@ -582,4 +593,10 @@ h1 span {
 	#standout .bg {
 		margin: -120px -34% 0 -34% !important;
 	}
+}
+
+
+@keyframes weight {
+	0% {font-variation-settings: "wght" 200;}
+	100% {font-variation-settings: "wght" 800;}
 }
