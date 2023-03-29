@@ -280,7 +280,6 @@ body.purple #about li::marker {
 }
 
 #workshops div.feature {
-	height: 50%;
 	display: grid;
 	place-items: center;
 	background: var(--brand-color1);
@@ -475,6 +474,10 @@ body.purple #about li::marker {
 			"description description";
 	}
 
+	#workshops div.feature {
+		height: 100%;
+	}
+
 	#standout.full .bg {
 		margin: -100px -5.5% 0 -5.5%;
 		height: 102%;
@@ -571,6 +574,10 @@ body.purple #about li::marker {
 		width: 30%;
 		height: auto;
 		padding: 0;
+	}
+
+	#workshops div.feature {
+		height: 50%;
 	}
 
 	#standout.full .bg {
